@@ -1,0 +1,163 @@
+.auth-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--parchment) 100%);
+}
+
+.auth-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.auth-left {
+  background: linear-gradient(135deg, var(--espresso) 0%, var(--brown-dark) 100%);
+  color: white;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.auth-left-content {
+  text-align: center;
+}
+
+.auth-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.auth-left > p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.auth-quote {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.auth-quote blockquote {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.auth-quote cite {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.auth-perks {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.auth-perks p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.auth-right {
+  padding: 3rem;
+  background: white;
+}
+
+.auth-form-container h2 {
+  margin-bottom: 1.5rem;
+  color: var(--espresso);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--brown-dark);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--tan);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--amber);
+}
+
+.auth-error {
+  background-color: #fee;
+  color: #c33;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-btn {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.demo-btn {
+  width: 100%;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--brown);
+}
+
+.auth-switch a {
+  color: var(--amber);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.demo-credentials {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--cream);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--brown);
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .auth-left {
+    padding: 2rem;
+  }
+  
+  .auth-right {
+    padding: 2rem;
+  }
+}
